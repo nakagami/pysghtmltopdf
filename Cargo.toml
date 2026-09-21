@@ -1,0 +1,22 @@
+[package]
+name = "sghtmltopdf"
+version = "0.1.0"
+authors = ["Hajime Nakagami <nakagami@gmail.com>"]
+edition = "2021"
+
+license = "MIT"
+description = "Python binding for sghtmltopdf (HTML to PDF converter using Servo)"
+repository = "https://github.com/nakagami/pysghtmltopdf"
+readme = "README.md"
+keywords = ["pdf", "html", "servo", "sghtmltopdf"]
+
+[dependencies]
+sghtmltopdf-core = { git = "https://github.com/waka/sghtmltopdf", branch = "main", default-features = false, features = ["cli", "svg"] }
+
+[dependencies.pyo3]
+version = "0.29"
+features = ["extension-module"]
+
+[lib]
+name = "_sghtmltopdf"
+crate-type = ["cdylib"]

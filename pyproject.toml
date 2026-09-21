@@ -1,0 +1,29 @@
+[build-system]
+requires = ["maturin>=1.0,<2.0"]
+build-backend = "maturin"
+
+[project]
+name = "sghtmltopdf"
+version = "0.1.0"
+description = "Python binding for sghtmltopdf (HTML to PDF converter using Servo)"
+readme = "README.md"
+license = { file = "LICENSE" }
+authors = [{ name = "Hajime Nakagami", email = "nakagami@gmail.com" }]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Rust",
+    "Topic :: Printing",
+    "Topic :: Text Processing :: Markup :: HTML",
+]
+keywords = ["pdf", "html", "servo", "sghtmltopdf"]
+
+[project.urls]
+Homepage = "https://github.com/nakagami/pysghtmltopdf"
+
+[tool.maturin]
+module-name = "sghtmltopdf._sghtmltopdf"
+exclude = ["Cargo.lock", ".gitignore", ".github/workflows/test.yml"]
