@@ -11,7 +11,7 @@ readme = "README.md"
 keywords = ["pdf", "html", "servo", "sghtmltopdf"]
 
 [dependencies]
-sghtmltopdf-core = { git = "https://github.com/waka/sghtmltopdf", branch = "main", default-features = false, features = ["cli", "svg"] }
+sghtmltopdf = { version = ">= 0.5", default-features = false, features = ["cli", "svg"] }
 
 [dependencies.pyo3]
 version = "0.29"
