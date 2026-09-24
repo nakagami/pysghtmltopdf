@@ -4,7 +4,7 @@ build-backend = "maturin"
 
 [project]
 name = "sghtmltopdf"
-version = "0.1.0"
+version = "0.1.1"
 description = "Python binding for sghtmltopdf (HTML to PDF converter using Servo)"
 readme = "README.md"
 license = { file = "LICENSE" }

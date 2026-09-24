@@ -5,7 +5,7 @@ from typing import Any
 from . import _sghtmltopdf
 from .options import to_argv
 
-__version__ = "0.1.0"
+__version__ = "0.1.1"
 
 
 def render(html: str | bytes, **options: Any) -> bytes:
